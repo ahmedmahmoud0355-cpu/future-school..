@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activities | Future School</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html">Future<span>School</span></a>
+      <button class="menu" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">News</a></li>
+        <li><a href="booking.html" class="on">Activities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero small">
+    <div class="container">
+      <h1>Activity Registration</h1>
+      <p>Reserve a place in one of our clubs.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <form class="form-grid box" action="#" method="post">
+        <div>
+          <label for="name">Student Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="mail">Parent Email</label>
+          <input type="email" id="mail" name="mail" required>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+          <label for="club">Activity</label>
+          <select id="club" name="club" required>
+            <option value="">Choose one</option>
+            <option>Technology Club</option>
+            <option>Science Lab</option>
+            <option>Arts &amp; Design</option>
+          </select>
+        </div>
+        <div class="full">
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="4"></textarea>
+        </div>
+        <div class="full check">
+          <input type="checkbox" id="ok" name="ok" required>
+          <label for="ok">I agree to the school activity rules.</label>
+        </div>
+        <div class="full">
+          <button class="btn" type="submit">Send Registration</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <p>&copy; Future School. All rights reserved.</p>
+      <p>School address &bull; School email</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector(".menu").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>
