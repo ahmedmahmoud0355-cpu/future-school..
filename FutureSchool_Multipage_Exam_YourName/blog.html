@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News | Future School</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html">Future<span>School</span></a>
+      <button class="menu" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="on">News</a></li>
+        <li><a href="booking.html">Activities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero small">
+    <div class="container">
+      <h1>School News</h1>
+      <p>The latest stories from Future School.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <div class="blog-grid">
+        <article class="card">
+          <span class="tag">Events</span> <small>Date</small>
+          <h3>Science Fair Winners</h3>
+          <p>Our students impressed the judges with creative experiments.</p>
+          <a class="more" href="blog.html">Read more</a>
+        </article>
+        <article class="card">
+          <span class="tag">Tech</span> <small>Date</small>
+          <h3>New Robotics Kit</h3>
+          <p>The Technology Club has new kits for building robots.</p>
+          <a class="more" href="blog.html">Read more</a>
+        </article>
+        <article class="card">
+          <span class="tag">Arts</span> <small>Date</small>
+          <h3>Art Exhibition Opens</h3>
+          <p>Student paintings and digital art fill the main hall.</p>
+          <a class="more" href="blog.html">Read more</a>
+        </article>
+        <article class="card">
+          <span class="tag">Sports</span> <small>Date</small>
+          <h3>Sports Day</h3>
+          <p>Teams competed in friendly races and games.</p>
+          <a class="more" href="blog.html">Read more</a>
+        </article>
+        <article class="card">
+          <span class="tag">News</span> <small>Date</small>
+          <h3>Library Upgrade</h3>
+          <p>The library now offers new books and quiet study areas.</p>
+          <a class="more" href="blog.html">Read more</a>
+        </article>
+        <article class="card">
+          <span class="tag">Events</span> <small>Date</small>
+          <h3>Open Day Announced</h3>
+          <p>Families are invited to meet teachers and tour classrooms.</p>
+          <a class="more" href="blog.html">Read more</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <p>&copy; Future School. All rights reserved.</p>
+      <p>School address &bull; School email</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector(".menu").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>

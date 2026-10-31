@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Future School</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html">Future<span>School</span></a>
+      <button class="menu" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="on">About</a></li>
+        <li><a href="blog.html">News</a></li>
+        <li><a href="booking.html">Activities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero small">
+    <div class="container">
+      <h1>About Future School</h1>
+      <p>A place where learning meets imagination.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <p class="lead">We help every student grow into a confident, creative, and responsible learner.</p>
+      <div class="stats">
+        <div class="stat"><b>00</b><span>Students</span></div>
+        <div class="stat"><b>00</b><span>Teachers</span></div>
+        <div class="stat"><b>00</b><span>Years</span></div>
+        <div class="stat"><b>00</b><span>Clubs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt">
+    <div class="container">
+      <h2>Meet Our Team</h2>
+      <div class="staff">
+        <article class="person">
+          <h3>Alex Morgan</h3>
+          <span class="role">Principal</span>
+          <p>Leads the school and its teaching team.</p>
+        </article>
+        <article class="person">
+          <h3>Sam Jordan</h3>
+          <span class="role">Technology Teacher</span>
+          <p>Runs the coding club and digital learning.</p>
+        </article>
+        <article class="person">
+          <h3>Riley Khan</h3>
+          <span class="role">Science Teacher</span>
+          <p>Makes every experiment an adventure.</p>
+        </article>
+        <article class="person">
+          <h3>Taylor Lee</h3>
+          <span class="role">Art Teacher</span>
+          <p>Guides students through creative projects.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <p>&copy; Future School. All rights reserved.</p>
+      <p>School address &bull; School email</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector(".menu").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>

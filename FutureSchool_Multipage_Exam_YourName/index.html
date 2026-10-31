@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Future School</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html">Future<span>School</span></a>
+      <button class="menu" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="on">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">News</a></li>
+        <li><a href="booking.html">Activities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Building Bright Futures</h1>
+      <p>Future School inspires curious minds through technology, science, and creativity.</p>
+      <a class="btn" href="booking.html">Join an Activity</a>
+      <a class="btn ghost" href="about.html">Learn More</a>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <h2>Our Activities</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Technology Club</h3>
+          <p>Coding, robotics, and web design projects.</p>
+        </article>
+        <article class="card">
+          <h3>Science Lab</h3>
+          <p>Hands-on experiments that make discovery exciting.</p>
+        </article>
+        <article class="card">
+          <h3>Arts &amp; Design</h3>
+          <p>Drawing, digital art, and creative workshops.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container">
+      <h2>Admissions are open</h2>
+      <p>Caring teachers and modern learning spaces.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <p>&copy; Future School. All rights reserved.</p>
+      <p>School address &bull; School email</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector(".menu").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>
